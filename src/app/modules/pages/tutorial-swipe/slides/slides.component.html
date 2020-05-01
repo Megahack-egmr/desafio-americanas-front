@@ -1,0 +1,27 @@
+<ion-slides pager="true" [options]="slideOpts">
+
+  <ion-slide *ngFor='let slide of slides'>
+    <ion-grid>
+
+      <ion-row>
+        <ion-col>
+          <div>
+            <img [src]="slide.icon">
+          </div>
+        </ion-col>
+      </ion-row>
+
+      <ion-row>
+        <ion-col>
+          <div>
+            <p>{{slide.description}}</p>
+
+            <button *ngIf='slide.activeBtn'>continuar as compras</button>
+          </div>
+        </ion-col>
+      </ion-row>
+
+    </ion-grid>
+  </ion-slide>
+
+</ion-slides>
