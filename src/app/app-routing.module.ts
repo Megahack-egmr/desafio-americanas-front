@@ -6,7 +6,12 @@ const routes: Routes = [
   {
     path: 'produtos',
     loadChildren: () => import('./modules/pages/product/product.module').then(m => m.ProductModule)
-  }
+  },
+  {
+    path: '',
+    loadChildren: () =>
+      import('./modules/pages/tutorial-swipe/tutorial-swipe.module').then((m) => m.TutorialSwipePageModule),
+  },
 ];
 
 @NgModule({
