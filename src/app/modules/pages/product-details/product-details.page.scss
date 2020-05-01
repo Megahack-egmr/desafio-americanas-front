@@ -1,0 +1,89 @@
+ion-content {
+    ion-card {
+        ion-card-header {
+            .has-product {
+                padding: 4px;
+                font-size: 1.05em;
+                font-weight: bold;
+                background: #E5E5E5;
+                color: #000;
+                border-radius: 5px;
+                width: 256px;
+            }
+        }
+
+        ion-card-content {
+            ion-grid {
+                ion-row {
+                    ion-col {
+                        .or-then-width {
+                            width: 65%;
+                        }
+
+                        .payment-methods {
+                            text-decoration: underline;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    .container-ion-card {
+        max-width: 652px;
+        margin: 0 auto;
+    }
+
+    .margin-b-content {
+        margin-bottom: 12px;
+    }
+
+    .input-card {
+        border: 1px solid #C4C4C4;
+        border-radius: 10px;
+        width: 125px;
+        height: 44.88px;
+
+        ion-button {
+            font-size: 0.7em;
+        }
+
+        .box-cep {
+            width: 100%;
+
+            label {
+                margin-top: 5px;
+            }
+
+            margin-left: 10px;
+
+            input {
+                border: none;
+
+                &:focus {
+                    outline: none;
+                }
+            }
+        }
+    }
+
+    hr {
+        width: 100%;
+    }
+
+    .card-without-background {
+        background: transparent;
+        box-shadow: none;
+
+        ion-card-header {
+            padding: 0px;
+        }
+
+        margin-bottom: 5px;
+    }
+
+    ion-text>* {
+        margin: 0px 10px 0px 10px;
+        color: #737373;
+    }
+}
