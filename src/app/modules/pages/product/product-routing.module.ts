@@ -1,18 +1,20 @@
-import { PreloadAllModules, RouterModule, Routes } from '@angular/router';
+import { RouterModule, Routes } from '@angular/router';
 
 import { NgModule } from '@angular/core';
 
 const routes: Routes = [
   {
-    path: '', redirectTo: 'buscar-produtos', pathMatch: 'full'
+    path: '',
+    redirectTo: 'buscar-produtos',
+    pathMatch: 'full',
   },
   {
     path: 'produto',
-    loadChildren: () => import('./product-details/product-details.module').then(m => m.ProductDetailsPageModule)
+    loadChildren: () => import('./product-details/product-details.module').then((m) => m.ProductDetailsPageModule),
   },
   {
     path: 'buscar-produtos',
-    loadChildren: () => import('./search-products/search-products.module').then(m => m.SearchProductsPageModule)
+    loadChildren: () => import('./search-products/search-products.module').then((m) => m.SearchProductsPageModule),
   },
 ];
 
@@ -20,4 +22,4 @@ const routes: Routes = [
   imports: [RouterModule.forChild(routes)],
   exports: [RouterModule],
 })
-export class ProductRoutingModule { }
+export class ProductRoutingModule {}
