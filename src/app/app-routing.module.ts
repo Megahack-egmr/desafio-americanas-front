@@ -1,12 +1,14 @@
 import { PreloadAllModules, RouterModule, Routes } from '@angular/router';
 
+import { AppComponent } from './app.component';
 import { NgModule } from '@angular/core';
 
 const routes: Routes = [
-  // {
-  //   path: 'folder/:id',
-  //   loadChildren: () => import('./folder/folder.module').then( m => m.FolderPageModule)
-  // }
+  {
+    path: '',
+    loadChildren: () =>
+      import('./modules/pages/tutorial-swipe/tutorial-swipe.module').then((m) => m.TutorialSwipePageModule),
+  },
 ];
 
 @NgModule({
