@@ -1,0 +1,32 @@
+ion-card {
+    ion-card-header {
+        >* {
+            margin-bottom: 10px;
+        }
+
+        ion-card-title {
+            font-size: 1em;
+        }
+
+        .has-product {
+            padding: 4px;
+            font-size: 1.05em;
+            font-weight: bold;
+            background: #E5E5E5;
+            color: #000;
+            border-radius: 5px;
+            max-width: 256px;
+        }
+    }
+}
+
+.card-without-background {
+    background: transparent;
+    box-shadow: none;
+
+    ion-card-header {
+        padding: 0px;
+    }
+
+    margin-bottom: 5px;
+}
