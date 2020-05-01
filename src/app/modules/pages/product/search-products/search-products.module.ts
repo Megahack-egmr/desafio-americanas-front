@@ -4,7 +4,7 @@ import { IonicModule } from '@ionic/angular';
 import { NgModule } from '@angular/core';
 import { SearchProductsPage } from './search-products.page';
 import { SearchProductsPageRoutingModule } from './search-products-routing.module';
-import { SharedModule } from './../../../shared/shared.module';
+import { SharedModule } from '../../../../shared/shared.module';
 
 @NgModule({
   imports: [
