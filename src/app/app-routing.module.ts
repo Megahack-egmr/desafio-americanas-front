@@ -5,10 +5,10 @@ import { NgModule } from '@angular/core';
 const routes: Routes = [
   {
     path: 'produtos',
-    loadChildren: () => import('./modules/pages/product/product.module').then(m => m.ProductModule)
+    loadChildren: () => import('./modules/pages/product/product.module').then((m) => m.ProductModule),
   },
   {
-    path: '',
+    path: 'tutorial',
     loadChildren: () =>
       import('./modules/pages/tutorial-swipe/tutorial-swipe.module').then((m) => m.TutorialSwipePageModule),
   },
@@ -18,4 +18,4 @@ const routes: Routes = [
   imports: [RouterModule.forRoot(routes, { preloadingStrategy: PreloadAllModules })],
   exports: [RouterModule],
 })
-export class AppRoutingModule { }
+export class AppRoutingModule {}

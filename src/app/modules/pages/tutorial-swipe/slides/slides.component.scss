@@ -1,0 +1,19 @@
+ion-slide {
+  font-size: 14px;
+  padding: 65px 30px;
+
+  @media (max-width: 340px) {
+    padding: 40px 30px;
+  }
+}
+
+button {
+  background: #de1616;
+  border-radius: 5px;
+  color: #ffffff;
+  padding: 8px;
+}
+
+img {
+  height: 100%;
+}
