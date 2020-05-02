@@ -1,0 +1,31 @@
+ion-card {
+  ion-card-title {
+  }
+
+  .container-ion-card {
+    padding: 5px;
+
+    ion-slide {
+      width: 126px !important;
+      margin: 0px 10px;
+
+      .slide-content {
+        ion-text {
+          h6 {
+            color: #202020;
+            font-size: 0.7em;
+          }
+        }
+      }
+    }
+  }
+}
+
+ion-title {
+  padding: 15px 0px 5px 15px;
+  font-size: 0.85em;
+}
+
+.checked {
+  color: orange;
+}

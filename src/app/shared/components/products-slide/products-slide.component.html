@@ -1,0 +1,25 @@
+<ion-card>
+  <ion-card-title>
+    <ion-title>{{ title }}</ion-title>
+  </ion-card-title>
+  <ion-card-content class="container-ion-card">
+    <ion-slides>
+      <ion-slide class="d-flex column" *ngFor="let product of products">
+        <img src="../../../../assets/products/s10.png" alt="Imagem do produto">
+        <div class="slide-content">
+          <ion-text class="ion-text-left">
+            <h6>{{ 'Smartphone Samsung Galaxy A10 32GB Dual Chip Android 9.0 Tela 6.2” Octa-Core 4G Câmera 13MP - Preto'
+              | textOverflow:36 }}</h6>
+          </ion-text>
+          <ion-text color="primary" class="d-flex">
+            <span><strong>R$ 799,90</strong></span>
+          </ion-text>
+          <div class="rating" class="d-flex">
+            <span class="checked">&#9733;</span><span class="checked">&#9733;</span><span
+              class="checked">&#9733;</span><span class="checked">&#9733;</span><span>&#9733;</span>
+          </div>
+        </div>
+      </ion-slide>
+    </ion-slides>
+  </ion-card-content>
+</ion-card>

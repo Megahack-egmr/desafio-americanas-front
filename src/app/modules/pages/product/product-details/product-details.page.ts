@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 
 import { ActivatedRoute } from '@angular/router';
+import { ProductsSlideEnum } from './../../../../shared/models/products-slide-enum';
 
 @Component({
   selector: 'app-product-details',
@@ -8,9 +9,10 @@ import { ActivatedRoute } from '@angular/router';
   styleUrls: ['./product-details.page.scss'],
 })
 export class ProductDetailsPage implements OnInit {
+  ProductsSlide = ProductsSlideEnum;
   private id: string;
 
-  constructor(private route: ActivatedRoute) { }
+  constructor(private route: ActivatedRoute) {}
 
   ngOnInit() {
     this.getProductID();
@@ -26,4 +28,3 @@ export class ProductDetailsPage implements OnInit {
 interface Params {
   id: string;
 }
-
