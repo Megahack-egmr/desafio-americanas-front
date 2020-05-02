@@ -6,7 +6,6 @@ import { ProductItemComponent } from './../../../../shared/components/product-it
 import { ProductsSlideComponent } from './../../../../shared/components/products-slide/products-slide.component';
 import { SearchProductsPage } from './search-products.page';
 import { SearchProductsPageRoutingModule } from './search-products-routing.module';
-import { SharedModule } from '../../../../shared/shared.module';
 import { TextOverflowPipe } from './../../../../shared/pipes/text-overflow/text-overflow.pipe';
 
 @NgModule({
