@@ -10,7 +10,9 @@ import { StatusBar } from '@ionic-native/status-bar/ngx';
   styleUrls: ['app.component.scss'],
 })
 export class AppComponent implements OnInit {
+  navigate: any;
   constructor(readonly platform: Platform, readonly splashScreen: SplashScreen, readonly statusBar: StatusBar) {
+    this.sideMenu();
     this.initializeApp();
   }
 
@@ -22,4 +24,19 @@ export class AppComponent implements OnInit {
   }
 
   ngOnInit() {}
+
+  sideMenu() {
+    this.navigate = [
+      {
+        title: 'detaques',
+        url: '/home',
+        icon: 'home',
+      },
+      {
+        title: 'leitor de código de barras',
+        url: '/barcode',
+        icon: 'chatboxes',
+      },
+    ];
+  }
 }
